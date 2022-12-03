@@ -6,7 +6,7 @@ device_ids: -1        # single GPU / DP / DDP; run on all available GPUs;
 
 data:
   batch_size: 1       # one batch, one image
-  data_dir: ./data/neus/dtu_scan37
+  data_dir: /app/neus_npz/preprocessed
   cam_file: 'cameras_sphere.npz'
   downscale: 1        # downscale image for training
   pin_memory: True
@@ -57,7 +57,7 @@ training:
     warmup_steps: 5000 # unit: itertation steps
 
   # num_epochs: 50000
-  num_iters: 300000 # 300k
+  num_iters: 30000 # 30k
 
   ckpt_file: null # will be read by python as None
   ckpt_ignore_keys: []     # only change if you want to drop certain keys in the saved checkpionts.
