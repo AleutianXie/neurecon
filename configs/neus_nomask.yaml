@@ -1,4 +1,4 @@
-expname: neus_37_nomask
+expname: preprocessed
 
 # device_ids: [0]     # single gpu           ; run on specified GPU
 # device_ids: [1, 0]  # DP                   ; run on specified GPU
@@ -11,7 +11,7 @@ data:
   downscale: 1        # downscale image for training
   pin_memory: True
 
-  N_rays: 512         # N_rays for training
+  N_rays: 128         # N_rays for training
   val_rayschunk: 256 # N_rays for validation
   val_downscale: 8    # downscale image for validation
 
